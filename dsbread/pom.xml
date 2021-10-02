@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dsbread</groupId>
+    <artifactId>dsbread-parent</artifactId>
+    <version>1.0.0</version>
+    <modules>
+        <module>dsbread-model</module>
+        <module>dsbread-dao</module>
+        <module>dsbread-service</module>
+        <module>dsbread-api</module>
+    </modules>
+
+    <!--配置父工程打包方式-->
+    <packaging>pom</packaging>
+
+    <!--公共版本号管理-->
+    <properties>
+        <parent.version>1.0.0</parent.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.5</version>
+    </parent>
+
+
+
+</project>
